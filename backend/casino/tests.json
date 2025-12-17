@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Get users list",
+      "method": "GET",
+      "path": "/?action=users",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "users": "array"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get bets list",
+      "method": "GET",
+      "path": "/?action=bets",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "bets": "array"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
